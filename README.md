@@ -14,33 +14,34 @@ del array “y” que no se encuentran en el array “x” utilizando para tal f
 única línea de código. const x = ["n", "bro", "c", "|"]; const y = ["d", "n", "l",
 "bro", "g"];
 
-5. Dada la siguiente base de datos relacional: RESUELVA LAS SIGUIENTES
-CONSULTAS EN SQL:
+5. Dada la siguiente base de datos relacional:
 
 ![DB](https://res.cloudinary.com/agustindi/image/upload/v1680624836/Challenges-Images/123_d8nmas.png)
 
-● Mostrar los nombres de los empleados ordenados alfabéticamente (Z...A)
+RESUELVA LAS SIGUIENTES CONSULTAS EN SQL:
 
-● Seleccionar el nombre, puesto y la localidad donde trabajan los empleados con puesto de
+1. Mostrar los nombres de los empleados ordenados alfabéticamente (Z...A)
+
+2. Seleccionar el nombre, puesto y la localidad donde trabajan los empleados con puesto de
 ‘Soporte’.
 
-● Listar los nombres de los empleados cuyo nombre termine con la letra ‘o’.
+3. Listar los nombres de los empleados cuyo nombre termine con la letra ‘o’.
 
-● Seleccionar el nombre, puesto y sueldo de los empleados que trabajan en la localidad Carlos
+4. Seleccionar el nombre, puesto y sueldo de los empleados que trabajan en la localidad Carlos
 Paz.
 
-● Seleccionar el nombre, sueldo y localidad donde trabajan los empleados que tengan un
+5. Seleccionar el nombre, sueldo y localidad donde trabajan los empleados que tengan un
 sueldo entre 10000 y 13000.
 
-● Visualizar los departamentos con más de 5 empleados.
+6. Visualizar los departamentos con más de 5 empleados.
 
-● Nombre de los empleados que trabajan en Córdoba y cuyo puesto sea ‘Analista’ o
+7. Nombre de los empleados que trabajan en Córdoba y cuyo puesto sea ‘Analista’ o
 ‘Programador’.
 
-● Calcula el sueldo medio de todos los empleados.
+8. Calcula el sueldo medio de todos los empleados.
 
-● ¿Cuál es el máximo sueldo de los empleados del departamento 10?.
+9. ¿Cuál es el máximo sueldo de los empleados del departamento 10?.
 
-● Calcula el sueldo mínimo de los empleados del departamento ‘Soporte’.
+10. Calcula el sueldo mínimo de los empleados del departamento ‘Soporte’.
 
-● Para cada puesto obtener la suma de sueldos.
+11. Para cada puesto obtener la suma de sueldos.
