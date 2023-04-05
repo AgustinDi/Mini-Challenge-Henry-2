@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const axios = require("axios");
+const Alumno = require("../Class/index.js")
 let router = Router();
 
 router.get('/1', async (req, res, next) => {
@@ -13,7 +14,12 @@ router.get('/1', async (req, res, next) => {
 })
 
 router.get('/3', async (req, res, next) => {
-
+    const people = new Alumno("agus", 19);
+    res.send({
+        nombre: people.getNombre(),
+        edad: people.getEdad(),
+        ["es un adulto?"]: people.isAdult()
+    })
 })
 
 module.exports = router;

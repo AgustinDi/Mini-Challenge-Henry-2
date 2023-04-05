@@ -1,4 +1,4 @@
-export class Alumno{
+class Alumno{
 	constructor(nombre,edad){
     	this.nombre=nombre;
       	this.edad=edad;
@@ -14,4 +14,4 @@ export class Alumno{
     }
 }
 
-let classmate = new Alumno("Mike Will",15);
+module.exports = Alumno;
