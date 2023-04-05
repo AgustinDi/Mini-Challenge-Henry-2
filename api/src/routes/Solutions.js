@@ -3,7 +3,7 @@ const axios = require("axios");
 let router = Router();
 
 router.get('/1', async (req, res, next) => {
-    res.send({section: 'solutions'})
+    res.send({result: Math.random() * 100})
 })
 
 module.exports = router;
