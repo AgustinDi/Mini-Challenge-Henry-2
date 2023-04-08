@@ -22,4 +22,10 @@ router.get('/3', async (req, res, next) => {
     })
 })
 
+router.get('/4', async (req, res, next) => {
+    const x = ["n", "bro", "c", "|"]; 
+    const y = ["d", "n", "l","bro", "g"];
+    res.send(y.filter(z=>!x.includes(z)))
+})
+
 module.exports = router;
