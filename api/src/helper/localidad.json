@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "LOCALIDAD":"Cordoba",
+            "ACTIVO":1
+        },
+        {
+            "LOCALIDAD":"Rosario",
+            "ACTIVO":1
+        },
+        {
+            "LOCALIDAD":"Corrientes",
+            "ACTIVO":1
+        }
+    ]
+}

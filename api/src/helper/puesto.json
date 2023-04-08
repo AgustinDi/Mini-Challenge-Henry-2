@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "PUESTO":"Gerente",
+            "ACTIVO":1
+        },
+        {
+            "PUESTO":"CEO",
+            "ACTIVO":1
+        },
+        {
+            "PUESTO":"Senior",
+            "ACTIVO":1
+        },
+        {
+            "PUESTO":"Junior",
+            "ACTIVO":1
+        }
+    ]
+}
