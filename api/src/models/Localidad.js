@@ -5,8 +5,7 @@ module.exports = (sequelize) => {
     // defino el modeloS
     sequelize.define('localidad', {
     ACTIVO: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+        type: DataTypes.INTEGER
     },
     LOCALIDAD: {
         type: DataTypes.STRING(80)
