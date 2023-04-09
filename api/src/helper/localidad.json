@@ -1,15 +1,19 @@
 {
     "data": [
         {
+            "LOCALIDAD":"Buenos Aires",
+            "ACTIVO":1
+        },
+        {
             "LOCALIDAD":"Cordoba",
             "ACTIVO":1
         },
         {
-            "LOCALIDAD":"Rosario",
+            "LOCALIDAD":"Mendoza",
             "ACTIVO":1
         },
         {
-            "LOCALIDAD":"Corrientes",
+            "LOCALIDAD":"Santa Fe",
             "ACTIVO":1
         }
     ]

@@ -1,22 +1,44 @@
 {
     "data": [
         {
-            "DENOMINACION":"Santa maria"
+            "DENOMINACION":"Quilmes",
+            "localidadId":1
         },
         {
-            "DENOMINACION":"Cordoba Capital"
+            "DENOMINACION":"Palermo",
+            "localidadId":1
         },
         {
-            "DENOMINACION":"Alvear"
+            "DENOMINACION":"Recoleta",
+            "localidadId":1
         },
         {
-            "DENOMINACION":"Funes"
+            "DENOMINACION":"Mendiolaza",
+            "localidadId":2
         },
         {
-            "DENOMINACION":"Concepcion"
+            "DENOMINACION":"Villa Allende",
+            "localidadId":2
         },
         {
-            "DENOMINACION":"Mercedes"
+            "DENOMINACION":"Alberdi",
+            "localidadId":2
+        },
+        {
+            "DENOMINACION":"Cerro de las...",
+            "localidadId":2
+        },
+        {
+            "DENOMINACION":"Maipu",
+            "localidadId":3
+        },
+        {
+            "DENOMINACION":"San Rafael",
+            "localidadId":3
+        },
+        {
+            "DENOMINACION":"La Capital",
+            "localidadId":4
         }
     ]
 }

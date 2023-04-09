@@ -9,6 +9,9 @@ module.exports = (sequelize) => {
         allowNull: false,
         primaryKey: true
     },
+    EDAD:{
+        type: DataTypes.INTEGER
+    },
     COMISION: {
         type: DataTypes.DOUBLE
     },

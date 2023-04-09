@@ -1,11 +1,11 @@
 {
     "data": [
         {
-            "PUESTO":"Gerente",
+            "PUESTO":"CEO",
             "ACTIVO":1
         },
         {
-            "PUESTO":"CEO",
+            "PUESTO":"Jefe de departamento",
             "ACTIVO":1
         },
         {
@@ -14,6 +14,10 @@
         },
         {
             "PUESTO":"Junior",
+            "ACTIVO":1
+        },
+        {
+            "PUESTO":"Soporte",
             "ACTIVO":1
         }
     ]

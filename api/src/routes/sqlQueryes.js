@@ -17,7 +17,7 @@ router.get('/1', async (req, res, next) => {
 
 router.get('/2', async (req, res, next) => {
     try {
-        let empleados = await Empleado.findAll({include: Puesto});
+        let empleados = await Departamento.findAll({include: Localidad});
         res.send(empleados)
     } catch (e) {
         console.log(e)

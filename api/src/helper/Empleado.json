@@ -1,39 +1,104 @@
 {
     "data":[
         {
-            "APELLIDO":"Di giacinto",
-            "NOMBRES":"Agustin",
-            "COMISION":25,
+            "APELLIDO":"Camey",
+            "NOMBRES":"Gamaliel",
+            "COMISION":20,
+            "EDAD":35,
             "FECHAALTA":"2023-01-01T00:00:02.023Z",
-            "SUELDO":150000
+            "SUELDO":25000,
+            "puestoId": 1,
+            "departamentoId": 4
         },
         {
             "APELLIDO":"Juarez",
             "NOMBRES":"Martin",
             "COMISION":20,
+            "EDAD":35,
             "FECHAALTA":"2023-01-01T00:00:02.023Z",
-            "SUELDO":150000
+            "SUELDO":11000,
+            "puestoId": 2,
+            "departamentoId": 4
         },
         {
             "APELLIDO":"Martinez",
             "NOMBRES":"Laura",
             "COMISION":20,
+            "EDAD":30,
             "FECHAALTA":"2023-01-01T00:00:02.023Z",
-            "SUELDO":150000
+            "SUELDO":12000,
+            "puestoId": 3,
+            "departamentoId": 1
         },
         {
             "APELLIDO":"Piogeo",
             "NOMBRES":"Marco",
             "COMISION":25,
+            "EDAD":28,
             "FECHAALTA":"2023-01-01T00:00:02.023Z",
-            "SUELDO":200000
+            "SUELDO":10000,
+            "puestoId": 3,
+            "departamentoId": 2
         },
         {
             "APELLIDO":"Gonzales",
             "NOMBRES":"Julieta",
             "COMISION":23,
+            "EDAD":19,
             "FECHAALTA":"2023-01-01T00:00:02.023Z",
-            "SUELDO":175000
+            "SUELDO":17500,
+            "puestoId": 3,
+            "departamentoId": 2
+        },
+        {
+            "APELLIDO":"barrios",
+            "NOMBRES":"lascano",
+            "COMISION":23,
+            "EDAD":29,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":17500,
+            "puestoId": 4,
+            "departamentoId": 6
+        },
+        {
+            "APELLIDO":"spanos",
+            "NOMBRES":"juancho",
+            "COMISION":23,
+            "EDAD":26,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":17500,
+            "puestoId": 4,
+            "departamentoId": 5
+        },
+        {
+            "APELLIDO":"armella",
+            "NOMBRES":"marcelo",
+            "COMISION":23,
+            "EDAD":28,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":17500,
+            "puestoId": 4,
+            "departamentoId": 3
+        },
+        {
+            "APELLIDO":"rueda",
+            "NOMBRES":"victoria",
+            "COMISION":23,
+            "EDAD":25,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":17500,
+            "puestoId": 5,
+            "departamentoId": 6
+        },
+        {
+            "APELLIDO":"llanos",
+            "NOMBRES":"Julieta",
+            "COMISION":23,
+            "EDAD":23,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":17500,
+            "puestoId": 5,
+            "departamentoId": 3
         }
     ]
 }
