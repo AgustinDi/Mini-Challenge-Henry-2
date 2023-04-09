@@ -62,10 +62,13 @@ sequelize.models = Object.fromEntries(capsEntries);
 const { Departamento, Empleado, Localidad, Puesto } = sequelize.models;
 
 Localidad.hasMany(Departamento);
+Departamento.belongsTo(Localidad);
 
 Departamento.hasMany(Empleado);
+Empleado.belongsTo(Departamento);
 
 Puesto.hasMany(Empleado);
+Empleado.belongsTo(Puesto);
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
