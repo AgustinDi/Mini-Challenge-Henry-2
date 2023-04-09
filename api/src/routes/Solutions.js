@@ -1,6 +1,7 @@
 const { Router } = require("express");
 const axios = require("axios");
-const Alumno = require("../Class/index.js")
+const Alumno = require("../Class/index.js");
+const sqlQueryes = require("./sqlQueryes.js");
 let router = Router();
 
 router.get('/1', async (req, res, next) => {
@@ -28,7 +29,6 @@ router.get('/4', async (req, res, next) => {
     res.send(y.filter(z=>!x.includes(z)))
 })
 
-router.get('/5', async (req, res, next) => {
-    
-})
+router.use('/5', sqlQueryes)
+
 module.exports = router;

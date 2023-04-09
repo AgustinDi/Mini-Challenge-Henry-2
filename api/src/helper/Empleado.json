@@ -4,35 +4,35 @@
             "APELLIDO":"Di giacinto",
             "NOMBRES":"Agustin",
             "COMISION":25,
-            "FECHAALTA":2023,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
             "SUELDO":150000
         },
         {
             "APELLIDO":"Juarez",
             "NOMBRES":"Martin",
             "COMISION":20,
-            "FECHAALTA":2023,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
             "SUELDO":150000
         },
         {
             "APELLIDO":"Martinez",
             "NOMBRES":"Laura",
             "COMISION":20,
-            "FECHAALTA":2023,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
             "SUELDO":150000
         },
         {
             "APELLIDO":"Piogeo",
             "NOMBRES":"Marco",
             "COMISION":25,
-            "FECHAALTA":2023,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
             "SUELDO":200000
         },
         {
             "APELLIDO":"Gonzales",
             "NOMBRES":"Julieta",
             "COMISION":23,
-            "FECHAALTA":2023,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
             "SUELDO":175000
         }
     ]

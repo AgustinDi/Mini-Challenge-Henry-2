@@ -1,6 +1,4 @@
 const { Router } = require('express');
-const { Type } = require('../db.js');
-const { default: axios } = require('axios');
 const solutions = require('./Solutions.js')
 
 const router = Router();
@@ -13,5 +11,9 @@ router.get('/',async (req,res,next) => {
 })
 
 router.use('/solution', solutions)
+
+router.get('/',async (req,res,next) => {
+    res.send({server: 'error'})
+})
 
 module.exports = router;
