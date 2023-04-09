@@ -7,8 +7,12 @@ router.get('/', async (req, res, next) => {
 })
 
 router.get('/1', async (req, res, next) => {
-    let result = await Empleado.findAll();
-    res.send(result)
+    try {
+        let empleados = await Empleado.findAll();
+        res.send(empleados.map(x=>x.NOMBRES).sort())
+    } catch (e) {
+        res.status(400).send(e)
+    }
 })
 
 module.exports = router;
