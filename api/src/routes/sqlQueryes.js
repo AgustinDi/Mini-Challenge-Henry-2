@@ -43,4 +43,37 @@ router.get('/2', async (req, res, next) => {
     }
 })
 
+router.get('/3', async (req, res, next) => {
+    try {
+        let empleados = await Empleado.findAll();
+        let empleadosFiltrados = empleados.filter(x=>/.*o$/.test(x.NOMBRES))
+        let resultado = empleadosFiltrados.map(x=>{return {NOMBRE: x.dataValues.NOMBRES}})
+        res.send(resultado)
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
+router.get('/4', async (req, res, next) => {
+    try {
+        let empleados = await Empleado.findAll({include: Puesto});
+        let carlosPaz = await Localidad.findOne({where:{LOCALIDAD: "Carlos Paz"}});
+        console.log(carlosPaz.dataValues.LOCALIDAD)
+        let resultado = empleados.map(empleado => {
+            const {NOMBRES, puesto, SUELDO} = empleado.dataValues
+            console.log(SUELDO)
+            return {
+                NOMBRES,
+                PUESTO: puesto.dataValues.PUESTO,
+                SUELDO
+            }
+        })
+        res.send(resultado.filter(x=>x.PUESTO === 'Soporte'))
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
 module.exports = router;
