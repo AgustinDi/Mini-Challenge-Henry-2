@@ -59,7 +59,6 @@ router.get('/4', async (req, res, next) => {
     try {
         let empleados = await Empleado.findAll({include: Puesto});
         let carlosPaz = await Localidad.findOne({where:{LOCALIDAD: "Carlos Paz"}});
-        console.log()
         let resultado = empleados.map(empleado => {
             const {NOMBRES, puesto, SUELDO} = empleado.dataValues
             console.log(SUELDO)
@@ -71,6 +70,30 @@ router.get('/4', async (req, res, next) => {
             }
         })
         res.send(resultado.filter(x=>x.PUESTO === 'Soporte'))
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
+router.get('/5', async (req, res, next) => {
+    try {
+        let empleados = await Empleado.findAll({include: Puesto});
+        let carlosPaz = await Localidad.findOne({where:{LOCALIDAD: "Carlos Paz"}});
+        let resultado = empleados.map(empleado => {
+            const {NOMBRES, SUELDO, puesto, departamentoId} = empleado.dataValues
+            let Localidad;
+            for (const value in relation) {
+                if(relation[value].includes(departamentoId)) Localidad = value
+            }
+            return {
+                NOMBRES,
+                SUELDO,
+                PUESTO: puesto.dataValues.PUESTO,
+                Localidad
+            }
+        })
+        res.send(resultado.filter(x=>x.SUELDO >= 10000 && x.SUELDO <= 13000))
     } catch (e) {
         console.log(e)
         res.send(e)
