@@ -1,6 +1,12 @@
 const { Router } = require("express");
 const { Departamento, Empleado, Localidad, Puesto } = require('../db.js');
 let router = Router();
+const relation = {
+    ["Buenos Aires"]:[1,2,3],
+    Cordoba:[4,5,6,7],
+    Mendoza:[8,9],
+    ["Santa Fe"]:[10]   
+}
 
 router.get('/', async (req, res, next) => {
     res.send({server: "Las respuestas del 1 al 13 se encuentran agregando un /"})
@@ -17,12 +23,6 @@ router.get('/1', async (req, res, next) => {
 
 router.get('/2', async (req, res, next) => {
     try {
-        let relation = {
-            ["Buenos Aires"]:[1,2,3],
-            Cordoba:[4,5,6,7],
-            Mendoza:[8,9],
-            ["Santa Fe"]:[10]   
-        }
         let empleados = await Empleado.findAll({include: Puesto});
         let resultado = empleados.map(empleado => {
             const {NOMBRES, puesto, departamentoId} = empleado.dataValues
@@ -59,13 +59,14 @@ router.get('/4', async (req, res, next) => {
     try {
         let empleados = await Empleado.findAll({include: Puesto});
         let carlosPaz = await Localidad.findOne({where:{LOCALIDAD: "Carlos Paz"}});
-        console.log(carlosPaz.dataValues.LOCALIDAD)
+        console.log()
         let resultado = empleados.map(empleado => {
             const {NOMBRES, puesto, SUELDO} = empleado.dataValues
             console.log(SUELDO)
             return {
                 NOMBRES,
                 PUESTO: puesto.dataValues.PUESTO,
+                LOCALIDAD: carlosPaz.dataValues.LOCALIDAD,
                 SUELDO
             }
         })
