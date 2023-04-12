@@ -100,4 +100,15 @@ router.get('/5', async (req, res, next) => {
     }
 })
 
+router.get('/6', async (req, res, next) => {
+    try {
+        const data = await Departamento.findAll({include: [Empleado]});
+        const result = data.filter(x=>x.dataValues.empleados.length >= 5)
+        res.send(result)
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
 module.exports = router;

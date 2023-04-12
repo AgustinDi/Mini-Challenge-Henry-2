@@ -18,10 +18,10 @@
             "FECHAALTA":"2023-01-01T00:00:02.023Z",
             "SUELDO":11000,
             "puestoId": 2,
-            "departamentoId": 4
+            "departamentoId": 2
         },
         {
-            "APELLIDO":"Martinez",
+            "APELLIDO":"Martines",
             "NOMBRES":"Laura",
             "COMISION":20,
             "EDAD":30,
@@ -99,6 +99,46 @@
             "SUELDO":17500,
             "puestoId": 5,
             "departamentoId": 3
+        },
+        {
+            "APELLIDO":"Brizuela",
+            "NOMBRES":"German",
+            "COMISION":23,
+            "EDAD":23,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":17500,
+            "puestoId": 5,
+            "departamentoId": 2
+        },
+        {
+            "APELLIDO":"Candela",
+            "NOMBRES":"Di giacinto",
+            "COMISION":22,
+            "EDAD":27,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":12000,
+            "puestoId": 5,
+            "departamentoId": 2
+        },
+        {
+            "APELLIDO":"Spanos",
+            "NOMBRES":"Alejandra",
+            "COMISION":23,
+            "EDAD":46,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":17500,
+            "puestoId": 5,
+            "departamentoId": 2
+        },
+        {
+            "APELLIDO":"Martinez",
+            "NOMBRES":"Leonardo",
+            "COMISION":23,
+            "EDAD":45,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":12000,
+            "puestoId": 5,
+            "departamentoId": 4
         }
     ]
 }
