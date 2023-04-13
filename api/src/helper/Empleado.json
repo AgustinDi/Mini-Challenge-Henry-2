@@ -139,6 +139,26 @@
             "SUELDO":12000,
             "puestoId": 5,
             "departamentoId": 4
+        },
+        {
+            "APELLIDO":"Barrera",
+            "NOMBRES":"Marisol",
+            "COMISION":23,
+            "EDAD":19,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":13000,
+            "puestoId": 1,
+            "departamentoId": 10
+        },
+        {
+            "APELLIDO":"Velazques",
+            "NOMBRES":"Julian",
+            "COMISION":23,
+            "EDAD":26,
+            "FECHAALTA":"2023-01-01T00:00:02.023Z",
+            "SUELDO":10000,
+            "puestoId": 3,
+            "departamentoId": 10
         }
     ]
 }
