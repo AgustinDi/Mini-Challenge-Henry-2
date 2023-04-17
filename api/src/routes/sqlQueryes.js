@@ -125,8 +125,25 @@ router.get('/7', async (req, res, next) => {
                 LOCALIDAD
             }
         })
-        console.log(resultado)
         res.send(resultado.filter(x=>(x.PUESTO === 'Analista' || x.PUESTO === 'Programador') && x.LOCALIDAD === 'Cordoba'))
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
+
+router.get('/8', async (req, res, next) => {
+    try {
+        let empleados = await Empleado.findAll();
+        let sueldos = empleados.map(empleado => empleado.SUELDO);
+        let suma = 0;
+        for (const value of sueldos) {
+            suma += value
+        }
+        let result = suma / sueldos.length;
+        console.log(result)
+        res.send({media: parseInt(result)})
     } catch (e) {
         console.log(e)
         res.send(e)
