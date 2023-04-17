@@ -150,4 +150,15 @@ router.get('/8', async (req, res, next) => {
     }
 })
 
+router.get('/9', async (req, res, next) => {
+    try {
+        let departamento = await Departamento.findOne({where: {id: 10}, inculde: Empleado})
+        let empleados = await Empleado.findAll({where: {departamentoId: 10}});
+        res.send({[departamento.dataValues.DENOMINACION]: empleados})
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
 module.exports = router;
