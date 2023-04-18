@@ -174,4 +174,21 @@ router.get('/10', async (req, res, next) => {
     }
 })
 
+
+router.get('/11', async (req, res, next) => {
+    try {
+        const puestos = await Puesto.findAll({include: Empleado});
+        const result = puestos.map(x => {
+            const SUMASUELDO = x.empleados.map(y=>y.dataValues.SUELDO)
+            return {
+            PUESTO: x.PUESTO,
+            SUMADESUELDO: SUMASUELDO.reduce((a, b) => a + b, 0)
+        }})
+        res.send(result)
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
 module.exports = router;
