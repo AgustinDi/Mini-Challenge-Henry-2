@@ -161,4 +161,17 @@ router.get('/9', async (req, res, next) => {
     }
 })
 
+router.get('/10', async (req, res, next) => {
+    try {
+        const empleados = await Empleado.findAll({include: Puesto});
+        const empleadosSoporte = empleados.filter(x =>x.dataValues.puesto.dataValues.PUESTO === 'Soporte')
+        const sueldos = empleadosSoporte.map(x=>x.dataValues.SUELDO)
+
+        res.send({result: Math.min(...sueldos)})
+    } catch (e) {
+        console.log(e)
+        res.send(e)
+    }
+})
+
 module.exports = router;
