@@ -1,0 +1,15 @@
+{
+    "data":[
+        "Mostrar los nombres de los empleados ordenados alfabéticamente (Z...A)",
+        "Seleccionar el nombre, puesto y la localidad donde trabajan los empleados con puesto de 'Soporte'.",
+        "Listar los nombres de los empleados cuyo nombre termine con la letra 'o'.",
+        "Seleccionar el nombre, puesto y sueldo de los empleados que trabajan en la localidad Carlos Paz.",
+        "Seleccionar el nombre, sueldo y localidad donde trabajan los empleados que tengan un sueldo entre 10000 y 13000.",
+        "Visualizar los departamentos con más de 5 empleados.",
+        "Nombre de los empleados que trabajan en Córdoba y cuyo puesto sea 'Analista' o 'Programador'.",
+        "Calcula el sueldo medio de todos los empleados.",
+        "¿Cuál es el máximo sueldo de los empleados del departamento 10?.",
+        "Calcula el sueldo mínimo de los empleados del departamento 'Soporte'.",
+        "Para cada puesto obtener la suma de sueldos."
+    ]
+}
