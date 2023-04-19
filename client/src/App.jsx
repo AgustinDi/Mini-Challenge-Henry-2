@@ -1,13 +1,11 @@
-import {data} from './helper/activity.json'
 import './App.css'
+import Activities from './components/activities'
 
 function App() {
   return (
     <div className="App">
       <h1>Mini Challenge Henry 2</h1>
-      <ol>
-        {data.map(x=><li>{x}</li>)}
-      </ol>
+      <Activities/>
     </div>
   )
 }
