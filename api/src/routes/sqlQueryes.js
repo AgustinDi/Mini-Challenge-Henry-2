@@ -15,7 +15,7 @@ router.get('/', async (req, res, next) => {
 router.get('/1', async (req, res, next) => {
     try {
         let empleados = await Empleado.findAll();
-        res.send(empleados.map(x=>x.NOMBRES).sort())
+        res.send(empleados.map(x=>x.NOMBRES).sort((a, b) => (a > b ? -1 : 1)))
     } catch (e) {
         res.status(400).send(e)
     }
