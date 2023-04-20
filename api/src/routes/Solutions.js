@@ -1,5 +1,4 @@
 const { Router } = require("express");
-const axios = require("axios");
 const Alumno = require("../Class/index.js");
 const sqlQueryes = require("./sqlQueryes.js");
 let router = Router();
